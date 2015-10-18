@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BLE Simple Plot</string>
+    <string name="action_settings">Settings</string>
+</resources>

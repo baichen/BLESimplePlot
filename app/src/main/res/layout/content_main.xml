@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <TextView android:text="Hello World!\nLine2\nLine3\nLine4\nLine5" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display"
+        android:layout_alignEnd="@+id/btn_scan"
+        android:height="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:scrollbars = "vertical"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:id="@+id/btn_scan"
+        android:layout_below="@+id/display"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/btn_connect"
+        android:layout_below="@+id/btn_scan"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listening"
+        android:id="@+id/sw"
+        android:textSize="30dp"
+        android:layout_below="@+id/btn_disconnect"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send 0x20:4E:02:30"
+        android:id="@+id/btn_send"
+        android:layout_below="@+id/sw"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:id="@+id/btn_exit"
+        android:layout_below="@+id/btn_send"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISCONNECT"
+        android:id="@+id/btn_disconnect"
+        android:layout_below="@+id/btn_connect"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
